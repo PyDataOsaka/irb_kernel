@@ -2,6 +2,8 @@ from pexpect import replwrap, EOF
 import signal
 from ipykernel.kernelbase import Kernel
 
+__version__ = '0.1.0'
+
 class IrbKernel(Kernel):
     implementation = 'irb_kernel'
     implementation_version = '0.0.1'
@@ -58,6 +60,3 @@ class IrbKernel(Kernel):
                 'user_expressions': {},
                }
 
-if __name__ == '__main__':
-    from ipykernel.kernelapp import IPKernelApp
-    IPKernelApp.launch_instance(kernel_class=IrbKernel)
