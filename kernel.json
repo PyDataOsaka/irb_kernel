@@ -1,0 +1,9 @@
+{
+  "display_name": "Irb",
+  "argv": [
+    "python",
+    "/home/kozo2/.jupyter/kernels/irb_kernel.py",
+    "-f", "{connection_file}"
+  ],
+  "codemirror_mode": "ruby"
+}
