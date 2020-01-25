@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "irb_kernel"
-version = "0.1.0"
+version = "0.1.1"
 description = "A Jupyter kernel for irb (REPL for Ruby programming language)"
 authors = ["Kozo Nishida <kozo.nishida@gmail.com>"]
 
