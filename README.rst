@@ -1,6 +1,11 @@
 irb_kernel
 ==========
 
+|PyPI version shields.io|
+
+.. |PyPI version shields.io| image:: https://img.shields.io/pypi/v/irb_kernel.svg
+   :target: https://pypi.python.org/pypi/irb_kernel/
+
 A Jupyter kernel for irb (REPL for Ruby programming language)
 
 To install::
