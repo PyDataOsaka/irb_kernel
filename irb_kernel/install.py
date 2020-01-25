@@ -8,7 +8,7 @@ from IPython.utils.tempdir import TemporaryDirectory
 
 kernel_json = {"argv": [sys.executable,"-m","irb_kernel", "-f", "{connection_file}"],
  "display_name": "Irb",
- "language":"bash",
+ "language":"ruby",
  "codemirror_mode": "ruby"
 }
 
