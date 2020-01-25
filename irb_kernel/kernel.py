@@ -2,11 +2,11 @@ from pexpect import replwrap, EOF
 import signal
 from ipykernel.kernelbase import Kernel
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 class IrbKernel(Kernel):
     implementation = 'irb_kernel'
-    implementation_version = '0.0.1'
+    implementation_version = '0.1.1'
 #    language = 'no-op'
 #    language_version = '0.1'
     language_info = {
