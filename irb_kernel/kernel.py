@@ -17,7 +17,7 @@ class IrbKernel(Kernel):
         'mimetype': 'text/x-ruby',
         'file_extension': '.rb',
     }
-    banner = "Irb kernel - as useful as a parrot"
+    banner = "Irb kernel - A Jupyter kernel for irb (REPL for Ruby programming language)"
 
     def __init__(self, **kwargs):
         Kernel.__init__(self, **kwargs)
