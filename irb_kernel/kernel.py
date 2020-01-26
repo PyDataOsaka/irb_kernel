@@ -4,15 +4,13 @@ from ipykernel.kernelbase import Kernel
 import signal
 import re
 
-__version__ = '0.1.1'
+__version__ = '0.1.2'
 
 crlf_pat = re.compile(r'[\r\n]+')
 
 class IrbKernel(Kernel):
     implementation = 'irb_kernel'
-    implementation_version = '0.1.1'
-#    language = 'no-op'
-#    language_version = '0.1'
+    implementation_version = '0.1.2'
     language_info = {
         'name': 'ruby',
         'codemirror_mode': 'ruby',
