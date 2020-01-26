@@ -9,7 +9,7 @@ irb_kernel
 .. image:: https://mybinder.org/badge_logo.svg
  :target: https://mybinder.org/v2/gh/PyDataOsaka/irb_kernel/master
 
-A Jupyter kernel for irb (REPL for Ruby programming language)
+A Jupyter wrapper kernel for irb (REPL for Ruby programming language)
 
 To install::
 
