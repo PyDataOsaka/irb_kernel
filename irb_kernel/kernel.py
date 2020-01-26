@@ -1,8 +1,12 @@
 from pexpect import replwrap, EOF
-import signal
 from ipykernel.kernelbase import Kernel
 
+import signal
+import re
+
 __version__ = '0.1.1'
+
+crlf_pat = re.compile(r'[\r\n]+')
 
 class IrbKernel(Kernel):
     implementation = 'irb_kernel'
@@ -30,7 +34,8 @@ class IrbKernel(Kernel):
 
     def do_execute(self, code, silent, store_history=True, user_expressions=None,
                    allow_stdin=False):
-        if not code.strip():
+        code = crlf_pat.sub(';', code.strip())
+        if not code:
             return {'status': 'ok', 'execution_count': self.execution_count,
                     'payload': [], 'user_expressions': {}}
 
