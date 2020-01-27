@@ -11,6 +11,17 @@ irb_kernel
 
 A Jupyter wrapper kernel for irb (REPL for Ruby programming language)
 
+The code in this project is almost same as bash_kernel_.
+Many thanks to the bash_kernel_ project.
+
+.. _bash_kernel: https://github.com/takluyver/bash_kernel/
+
+To Try irb_kernel without installing, click the binder badge
+
+.. image:: https://mybinder.org/badge_logo.svg
+ :target: https://mybinder.org/v2/gh/PyDataOsaka/irb_kernel/master
+
+
 To install::
 
     sudo apt install ruby
