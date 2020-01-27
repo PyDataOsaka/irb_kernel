@@ -14,7 +14,7 @@ Many thanks to the bash_kernel_ project.
 
 .. _bash_kernel: https://github.com/takluyver/bash_kernel/
 
-To Try irb_kernel without installing, click the binder badge
+To Try irb_kernel without installing, click the binder badge and open the *irb_kernel_test.ipynb* file.
 
 .. image:: https://mybinder.org/badge_logo.svg
  :target: https://mybinder.org/v2/gh/PyDataOsaka/irb_kernel/master
