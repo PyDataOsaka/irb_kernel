@@ -32,7 +32,6 @@ To use it, run one of:
 
     jupyter notebook
     # In the notebook interface, select Irb from the 'New' menu
-    jupyter qtconsole --kernel irb
     jupyter console --kernel irb
 
 For details of how this works, see the Jupyter docs on `wrapper kernels
