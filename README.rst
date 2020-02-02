@@ -6,6 +6,7 @@ irb_kernel
 .. |PyPI version shields.io| image:: https://img.shields.io/pypi/v/irb_kernel.svg
    :target: https://pypi.python.org/pypi/irb_kernel/
    
+**irb_kernel doesn't work with irb 1.2.*. At the moment please use irb version 1.1.* and earlier.**
 
 A Jupyter wrapper kernel for irb (REPL for Ruby programming language)
 
