@@ -24,6 +24,8 @@ To Try irb_kernel without installing, click the binder badge and open the *irb_k
 To install::
 
     sudo apt install ruby
+    sudo gem uninstall irb
+    sudo gem install irb -v 1.1.1
     pip install irb_kernel
     python -m irb_kernel.install
 
