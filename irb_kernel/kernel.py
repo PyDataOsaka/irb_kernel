@@ -2,11 +2,9 @@ from pexpect import replwrap, EOF
 from ipykernel.kernelbase import Kernel
 
 import signal
-import re
+import subprocess
 
 __version__ = '0.1.2'
-
-#crlf_pat = re.compile(r'[\r\n]+')
 
 class IrbKernel(Kernel):
     implementation = 'irb_kernel'
@@ -25,14 +23,17 @@ class IrbKernel(Kernel):
 
     def _start_irb(self):
         sig = signal.signal(signal.SIGINT, signal.SIG_DFL)
+        output=subprocess.getoutput("irb -v")
         try:
-            self.irbwrapper = replwrap.REPLWrapper("irb --simple-prompt", ">> ", None, continuation_prompt="?> ")
+            if output[:7] == 'irb 1.2':
+                self.irbwrapper = replwrap.REPLWrapper("irb --simple-prompt --nocolorize --nomultiline", ">> ", None, continuation_prompt="?> ")
+            else:
+                self.irbwrapper = replwrap.REPLWrapper("irb --simple-prompt", ">> ", None, continuation_prompt="?> ")
         finally:
             signal.signal(signal.SIGINT, sig)
 
     def do_execute(self, code, silent, store_history=True, user_expressions=None,
                    allow_stdin=False):
-        #code = crlf_pat.sub(';', code.strip())
         if not code:
             return {'status': 'ok', 'execution_count': self.execution_count,
                     'payload': [], 'user_expressions': {}}
