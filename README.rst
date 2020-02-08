@@ -6,8 +6,6 @@ irb_kernel
 .. |PyPI version shields.io| image:: https://img.shields.io/pypi/v/irb_kernel.svg
    :target: https://pypi.python.org/pypi/irb_kernel/
    
-**irb_kernel doesn't work with irb 1.2.*. At the moment please use irb version 1.1.* and earlier.**
-
 A Jupyter wrapper kernel for irb (REPL for Ruby programming language)
 
 The code in this project is almost same as bash_kernel_.
@@ -24,8 +22,6 @@ To Try irb_kernel without installing, click the binder badge and open the *irb_k
 To install::
 
     sudo apt install ruby
-    sudo gem uninstall irb
-    sudo gem install irb -v 1.1.1
     pip install irb_kernel
     python -m irb_kernel.install
 

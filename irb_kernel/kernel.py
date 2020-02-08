@@ -4,11 +4,11 @@ from ipykernel.kernelbase import Kernel
 import signal
 import subprocess
 
-__version__ = '0.1.2'
+__version__ = '0.2.0'
 
 class IrbKernel(Kernel):
     implementation = 'irb_kernel'
-    implementation_version = '0.1.2'
+    implementation_version = '0.2.0'
     language_info = {
         'name': 'ruby',
         'codemirror_mode': 'ruby',
